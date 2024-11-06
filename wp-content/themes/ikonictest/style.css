@@ -298,9 +298,31 @@ a:hover {
     transform: rotate(-135deg);
     opacity: 0.9;
 }
+#menu-menu-1 .main-sub-menu{
+    position: relative;
+}
 #menu-menu-1 .nav-item a {
     display: block;
     padding: .5rem 1rem;
+}
+#menu-menu-1 .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
 }
 /*--------------------------------------------------------------
 # Intro Section

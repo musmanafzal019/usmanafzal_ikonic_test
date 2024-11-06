@@ -10,7 +10,12 @@
     if (!$('#mainNav').hasClass('navbar-reduce')) {
       $('#mainNav').addClass('navbar-reduce');
     }
-  })
+  });
+  $('.main-sub-menu a').on('mouseenter', function() {
+    $(this).siblings('.sub-menu').css('display', 'block');
+  }).on('mouseleave', function() {
+    $(this).siblings('.sub-menu').css('display', 'none');
+  });
 
   // Preloader
   $(window).on('load', function() {
