@@ -24,17 +24,14 @@ wp_head();
             <span></span>
         </button>
         <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll active" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll" href="/projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll" href="/blog">Blog</a>
-                </li>
-            </ul>
+            <?php
+            $defaults = array(
+                'theme_location' => 'menu-1',
+                'container' => 'ul',
+                'menu_class' => 'navbar-nav',
+            );
+            wp_nav_menu($defaults);
+            ?>
         </div>
     </div>
 </nav>

@@ -298,7 +298,10 @@ a:hover {
     transform: rotate(-135deg);
     opacity: 0.9;
 }
-
+#menu-menu-1 .nav-item a {
+    display: block;
+    padding: .5rem 1rem;
+}
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
